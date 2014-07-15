@@ -4,7 +4,7 @@ routes = lambda do
              :controllers => { :sessions => 'spree/user_sessions',
                                :registrations => 'spree/user_registrations',
                                :passwords => 'spree/user_passwords' },
-             :skip => [:unlocks, :omniauth_callbacks],
+             :skip => [:unlocks],
              :path_names => { :sign_out => 'logout' },
              :path_prefix => :user
 
